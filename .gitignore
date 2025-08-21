@@ -1,0 +1,9 @@
+# ignore all
+*
+
+# let
+!*/
+!.gitignore
+!sway/**
+!foot/**
+!share/fonts/**
