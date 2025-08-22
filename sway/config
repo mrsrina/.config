@@ -219,10 +219,10 @@ bar {
   position top
 
   # Label metrics
-  status_command ~/.config/sway/handlers/metrics.sh
+  status_command ~/.config/sway/handlers/metrics-desktop.sh
 
   # Events
-  status_command ~/.config/sway/handlers/ui.sh
+  #status_command ~/.config/sway/handlers/ui.sh
 
   colors {
     statusline #32373c

@@ -10,7 +10,7 @@
 
 # let
 !.gitignore
-!sway/
+!sway/handlers/*
 !foot/**
 !share/fonts/**
 !README.md
