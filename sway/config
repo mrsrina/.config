@@ -13,6 +13,9 @@ set $menu wmenu-run
 set $bf "5"
 set $vf "5"
 
+set $opacity 0.98
+for_window [app_id="sublime_text"] opacity $opacity
+
 ### Output
 # Wallpaper
 output * bg ~/.config/sway/imgs/pinky-tesseract.png fill
