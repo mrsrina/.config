@@ -1,4 +1,4 @@
-
+# Stuff
 ### Variables
 
 set $mod Mod4
@@ -222,9 +222,6 @@ bar {
 
   # Label metrics
   status_command ~/.config/sway/handlers/metrics-desktop.sh
-
-  # Events
-  #status_command ~/.config/sway/handlers/ui.sh
 
   colors {
     statusline #32373c
