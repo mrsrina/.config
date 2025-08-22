@@ -1,8 +1,9 @@
 # ignore all
 *
+!*/
+/sublime-text/
 
 # let
-!*/
 !.gitignore
 !sway/**
 !foot/**
