@@ -221,7 +221,7 @@ bar {
   height $barheight
 
   # Label metrics
-  status_command ~/.config/sway/handlers/metrics-desktop.sh
+  status_command $labelmode
 
   colors {
     statusline #32373c
