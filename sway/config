@@ -217,6 +217,8 @@ bindsym Print exec grim
 
 bar {
   position top
+  font pango:ComicMono 11
+  height 27
 
   # Label metrics
   status_command ~/.config/sway/handlers/metrics-desktop.sh
