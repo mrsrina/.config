@@ -11,6 +11,7 @@
 # let
 !.gitignore
 !sway/handlers/*
+!/rofi/*
 !foot/**
 !share/fonts/**
 !README.md
