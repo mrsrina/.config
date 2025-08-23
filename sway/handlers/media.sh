@@ -12,7 +12,6 @@ function get_volume_percent() {
 
 function show_msg() {
   yad \
-    --back="#f8bbd0" \
     --undecorated \
     --no-buttons \
     --fixed \
@@ -65,5 +64,5 @@ if [ "$OP" = "d-" ]; then
   brightnessctl set $BF%-
   percent=$(get_display_percent)
   label="$percent%"
-  show_msg label
+  show_msg $label
 fi
