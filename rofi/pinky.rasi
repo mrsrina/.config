@@ -8,8 +8,8 @@
 /* modified by Rina to add pinky */
 
 * {
-    selected-normal-foreground:  #f8bbd0;
-    foreground:                  #32373c;
+    selected-normal-foreground:  #edd9e0;
+    foreground:                  #ba8f9e;
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 69, 90, 100, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
@@ -17,16 +17,16 @@
     blue:                        rgba ( 38, 139, 210, 100 % );
     urgent-foreground:           rgba ( 255, 82, 82, 100 % );
     alternate-urgent-background: rgba ( 69, 90, 100, 0 % );
-    active-foreground:           #f8bbd0;
+    active-foreground:           #edd9e0;
     lightbg:                     rgba ( 238, 232, 213, 100 % );
-    selected-active-foreground:  #f8bbd0;
+    selected-active-foreground:  #edd9e0;
     alternate-active-background: rgba ( 69, 90, 100, 0 % );
-    background:                  #f8bbd0;
+    background:                  #edd9e0;
     bordercolor:                 rgba ( 42, 55, 62, 0 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 69, 90, 100, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  #32373c;
+    selected-normal-background:  #ba8f9e;
     border-color:                rgba ( 195, 198, 200, 0 % );
     spacing:                     0;
     separatorcolor:              rgba ( 195, 198, 200, 0 % );
