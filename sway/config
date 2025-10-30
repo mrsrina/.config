@@ -10,7 +10,7 @@ output * bg ~/.config/sway/imgs/black-tesseract.png fill
 ### Variables
 
 set $mod Mod4
-set $left h`
+set $left h
 set $down j
 set $up k
 set $right l
