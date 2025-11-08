@@ -7,6 +7,8 @@ include ~/.config/sway/my-os-config.conf
 # Wallpaper
 output * bg ~/.config/sway/imgs/black-tesseract.png fill
 
+exec ddcutil detect | grep "I2C bus:" | awk -F'i2c-' '{print $2}' | awk '{print $1}' >& ~/.config/sway/displays.cache 
+
 ### Variables
 
 set $mod Mod4
@@ -90,6 +92,9 @@ bindsym $mod+o exec rofi -show
 # Media
 bindsym XF86MonBrightnessUp exec OP=d+ BF=$bf ~/.config/sway/handlers/media.sh
 bindsym XF86MonBrightnessDown exec OP=d- BF=$bf ~/.config/sway/handlers/media.sh
+
+bindsym $mod+Pause exec OP=d+ BF=$bf ~/.config/sway/handlers/media.sh
+bindsym $mod+Scroll_Lock exec OP=d- BF=$bf ~/.config/sway/handlers/media.sh
 
 bindsym XF86AudioRaiseVolume exec OP=v+ VF=$vf ~/.config/sway/handlers/media.sh
 bindsym XF86AudioLowerVolume exec OP=v- VF=$vf ~/.config/sway/handlers/media.sh

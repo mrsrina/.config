@@ -55,14 +55,23 @@ if [ "$OP" = "v-" ]; then
 fi
 
 if [ "$OP" = "d+" ]; then
-  brightnessctl set +$BF%
-  label="$(get_display_percent)%"
-  show_msg $label
+  percents=""
+  monitors=$(cat "$HOME/.config/sway/displays.cache")
+  for bus in $monitors; do
+    ddcutil --bus "$bus" setvcp 10 + $BF --noverify
+    percent=$(ddcutil getvcp 10 --bus "$bus" --terse | awk '/VCP/ {print $4}' | sed 's/$/%/')
+    percents="${percents}|$percent|"
+  done
+  show_msg $percents
 fi
 
 if [ "$OP" = "d-" ]; then
-  brightnessctl set $BF%-
-  percent=$(get_display_percent)
-  label="$percent%"
-  show_msg $label
+  percents=""
+  monitors=$(cat "$HOME/.config/sway/displays.cache")
+  for bus in $monitors; do
+    ddcutil --bus "$bus" setvcp 10 - $BF --noverify
+    percent=$(ddcutil getvcp 10 --bus "$bus" --terse | awk '/VCP/ {print $4}' | sed 's/$/%/')
+    percents="${percents}|$percent|"
+  done
+  show_msg $percents
 fi
