@@ -8,7 +8,7 @@ include ~/.config/sway/my-os-config.conf
 # Themes
 
 # include ~/.config/sway/themes/pinky.conf # pinky
-include ~/.config/sway/themes/linux.conf # blacky
+# include ~/.config/sway/themes/linux.conf # blacky
 
 exec ddcutil detect | grep "I2C bus:" | awk -F'i2c-' '{print $2}' | awk '{print $1}' >& ~/.config/sway/displays.cache 
 
