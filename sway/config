@@ -1,17 +1,25 @@
-# Stuff
+# Mod
+set $mod Mod4
 
 # Custom config stuff per display and machine
 # See my examples for base your things
 include ~/.config/sway/my-os-config.conf
 
-# Wallpaper
-output * bg ~/.config/sway/imgs/black-tesseract.png fill
+# Themes
+
+# include ~/.config/sway/themes/pinky.conf # pinky
+include ~/.config/sway/themes/linux.conf # blacky
 
 exec ddcutil detect | grep "I2C bus:" | awk -F'i2c-' '{print $2}' | awk '{print $1}' >& ~/.config/sway/displays.cache 
 
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
+for_window [app_id="yad"] floating enable, move position center, border none
+
+default_border none
+default_floating_border none
+
 ### Variables
 
-set $mod Mod4
 set $left h
 set $down j
 set $up k
@@ -23,7 +31,7 @@ set $menu wmenu-run
 set $bf "5"
 set $vf "5"
 
-set $opacity 0.98
+set $opacity 0.9
 for_window [app_id="sublime_text"] opacity $opacity
 
 ### Idle configuration
@@ -86,7 +94,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
 # Search for apps
-bindsym $mod+p exec rofi -show drun
+bindsym $mod+p exec rofi -show drun -p 
 bindsym $mod+o exec rofi -show
 
 # Media
@@ -229,29 +237,5 @@ bindsym Print exec grim
 
 # Status Bar:
 # Read `man 5 sway-bar` for more information about this section.
-
-# Printscreen
-
-bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
-bar {
-  position top
-  font pango:ComicMono $barfontsize
-  height $barheight
-
-  # Label metrics
-  status_command $labelmode
-
-  colors {
-    statusline #ba8f9e
-    background #edd9e0
-    inactive_workspace #edd9e0 #edd9e0 #ba8f9e
-    focused_workspace #ba8f9e #ba8f9e #edd9e0
-  }
-}
-
-for_window [app_id="yad"] floating enable, move position center, border none
-
-default_border none
-default_floating_border none
 
 include /etc/sway/config.d/*
