@@ -10,7 +10,7 @@ include ~/.config/sway/my-os-config.conf
 # include ~/.config/sway/themes/pinky.conf # pinky
 # include ~/.config/sway/themes/linux.conf # blacky
 
-exec ddcutil detect | grep "I2C bus:" | awk -F'i2c-' '{print $2}' | awk '{print $1}' >& ~/.config/sway/displays.cache 
+exec_always ddcutil detect | grep "I2C bus:" | awk -F'i2c-' '{print $2}' | awk '{print $1}' >& ~/.config/sway/displays.cache 
 
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy -t image/png
 for_window [app_id="yad"] floating enable, move position center, border none
