@@ -42,11 +42,22 @@ i mean, just use the brain, you will understand this easily, i trust you........
 
 ### mainly key-bindings
 
+note, if you are using desktop and works with ddcutil select the `media.sh`; if you are under something that is not compatible just use `media-brightnessctl.sh` may it works; if not create your own solution.
+
 - `mod+p` drun mode for open an application
 - `mod+o` select windows to focus
 - `mod+shift+s` select region to screenshot and send to clipboard
 - `mod+f11` occult or show bar, a complete fullscreen mode.
 - `mod+return` opens foot terminal.
+- `brightness-up` up brightness.
+- `brightness-down` down brightness.
+- `mod+Scroll_Lock` down brightness (in case your keyboard does not have it).
+- `mod+Pause` up brightness (in case your keyuboard does not have it).
+- `volume-up` volume up with pamixer.
+- `volume-down` volume down with pamixer.
+- `volume-mute` mute with pamixer.
+
+note the brightness increase/decrease for both monitors, i do not kwow how do it individually.
 
 ### setup
 
