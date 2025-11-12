@@ -6,6 +6,10 @@ this is a personal dot config files, easy for post arch linux installation.
 
 ### showcases
 
+#### UI
+
+the projects use `yad`, `rofi` and `lxqt-policykit` ~ of course you can change it, do not worry ~ that is it.
+
 #### theme-switch
 
 for switching themes you just include it or enable; of course you are able to create your own.
@@ -26,6 +30,14 @@ the `my-os-config.conf` is a generic header which points to your monitor, theme,
 <img width="552" height="125" alt="image" src="https://github.com/user-attachments/assets/2ab61d91-18bc-4636-a2be-6d96372f033e" />
 
 i mean, just use the brain, you will understand this easily, i trust you..............
+
+### mainly key-bindings
+
+- `mod+p` drun mode for open an application
+- `mod+o` select windows to focus
+- `mod+shift+s` select region to screenshot and send to clipboard
+- `mod+f11` occult or show bar, a complete fullscreen mode.
+- `mod+return` opens foot terminal.
 
 ### setup
 
