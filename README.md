@@ -6,9 +6,14 @@ this is a personal dot config files, easy for post arch linux installation.
 
 ### showcases
 
+#### xdg, initialization and patches
+
+i am using rofi to select which display should be screencast, this project include also xdg-desktop-portal-wlr patches (60fps, select region and stuff),
+when you install this project, automatically after tty login your desktop run sway, also with systemd patched.
+
 #### UI
 
-the projects use `yad`, `rofi` and `lxqt-policykit` ~ of course you can change it, do not worry ~ that is it.
+the projects use `yad`, `rofi`, `lxqt-policykit` ~ the entire OS is systemd-based ~ of course you can change it, do not worry ~ that is it.
 
 #### theme-switch
 
