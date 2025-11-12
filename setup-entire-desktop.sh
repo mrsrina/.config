@@ -4,7 +4,7 @@ sudo pacman -S \
  sway swaybg pipewire pipewire-alsa pipewire-jack pipewire-pulse \
  wireplumber git pavucontrol pamixer brightnessctl ddcutil rofi  \
  slurp wl-clipboard xdg-desktop-portal xdg-desktop-portal-wlr    \
- terminus-font
+ terminus-font yad grim lxqt-policykit
 
 systemctl --user enable pipewire
 systemctl --user start pipewire

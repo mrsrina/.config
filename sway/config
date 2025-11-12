@@ -26,6 +26,9 @@ default_floating_border none
 bindsym $mod+p exec rofi -show drun -p 
 bindsym $mod+o exec rofi -show
 
+# Barless
+bindsym $mod+F11 bar mode toggle
+
 ### Variables
 
 set $left h
@@ -80,9 +83,6 @@ bindsym $mod+Shift+q kill
 
 # Start your launcher
 bindsym $mod+d exec $menu
-
-# Barless
-bindsym $mod+F11 bar mode toggle
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
