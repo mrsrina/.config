@@ -6,6 +6,8 @@ this is a personal dot config files, easy for post arch linux installation.
 
 also note, this is an entire own thinked brainlet desktop, i did some very stupid stuff, do not use if you do not want explode your rofi configs and foot stuff.....emowmeowmm meow meow
 
+important stuff: you need to install comic-mono font under `/usr/local/share/fonts` for pinky theme, i will include later here this.
+
 ### showcases
 
 #### xdg, initialization and patches
