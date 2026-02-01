@@ -56,6 +56,7 @@ note, if you are using desktop and works with ddcutil select the `media.sh`; if 
 - `volume-up` volume up with pamixer.
 - `volume-down` volume down with pamixer.
 - `volume-mute` mute with pamixer.
+- `mod+shift+tab` switch between keyboard layouts (us | br), you are able to registry more layouts under `metrics/keyboard-switch-layout.sh`
 
 note the brightness increase/decrease for both monitors, i do not kwow how do it individually.
 
