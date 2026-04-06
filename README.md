@@ -68,8 +68,4 @@ run `./setup-entire-desktop.sh`, may you need run as root/sudo permissionwwwwwww
 
 i do not accept PR(s), this is not a open-source desktop easily stuff or anything like this, but I can help you and others of course help with your problem; open an issue, write the error logs etc and wait for any help.
 
-# 😻
-
-idk i luvwwwwww s.........e.r.pa 🫢
-
 
