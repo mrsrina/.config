@@ -1,0 +1,13 @@
+[Unit]
+Description=Auto idle keyboard built-in laptop when connects external
+After=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.config/sway/handlers/idle-laptop-keyboard.sh
+Restart=on-failure
+RestartSec=3po
+Environment=SWAYSOCK=%t/sway-ipc.%U.*.sock
+
+[Install]
+WantedBy=sway-session.target
