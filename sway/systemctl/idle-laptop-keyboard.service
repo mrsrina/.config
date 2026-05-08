@@ -6,7 +6,7 @@ After=sway-session.target
 Type=simple
 ExecStart=%h/.config/sway/handlers/idle-laptop-keyboard.sh
 Restart=on-failure
-RestartSec=3po
+RestartSec=3
 Environment=SWAYSOCK=%t/sway-ipc.%U.*.sock
 
 [Install]
