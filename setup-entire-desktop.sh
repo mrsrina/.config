@@ -18,12 +18,16 @@ systemctl --user start wireplumber
 systemctl --user start xdg-desktop-portal
 systemctl --user start xdg-desktop-portal-wlr.service
 
-sudo chmod +x ~/.config/sway/handlers/media.sh
-sudo chmod +x ~/.config/sway/handlers/media-brightnessctl.sh
-sudo chmod +x ~/.config/sway/handlers/metrics-battery.sh
-sudo chmod +x ~/.config/sway/handlers/metrics-desktop.sh
-sudo chmod +x ~/.config/sway/handlers/keyboard-switch-layout.sh
-sudo chmod +x ~/.config/sway/sway-run.sh
+chmod +x ~/.config/sway/handlers/media.sh
+chmod +x ~/.config/sway/handlers/media-brightnessctl.sh
+chmod +x ~/.config/sway/handlers/metrics-battery.sh
+chmod +x ~/.config/sway/handlers/metrics-desktop.sh
+chmod +x ~/.config/sway/handlers/keyboard-switch-layout.sh
+chmod +x ~/.config/sway/sway-run.sh
+chmod +x ~/.config/sway/handlers/idle-laptop-keyboard.sh
+
+mkdir -p ~/.config/systemd/user
+cp ~/.config/sway/systemctl/idle-laptop-keyboard.service ~/.config/systemd/user
 
 echo '[ "$(tty)" = "/dev/tty1" ] && ~/.config/sway/sway-run.sh' >> ~/.bash_profile
 
