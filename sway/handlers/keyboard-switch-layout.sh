@@ -17,11 +17,13 @@ declare -A indices
 
 indices["English (US)"]=0
 indices["Portuguese (Brazil)"]=1
+indices["Hebrew"]=2
 
 declare -A layouts
 
 layouts[0]="us"
 layouts[1]="br"
+layouts[2]="il"
 
 curlayout=$(swaymsg -t get_inputs \
  | jq -r '
